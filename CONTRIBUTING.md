@@ -10,7 +10,7 @@ There are many ways to contribute, from writing tutorials or blog posts, improvi
 
 ## License
 
-This repository uses the [The Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.html).
+Please [SEE LICENSE](#LICENSE)
 
 ## Bug reports
 
