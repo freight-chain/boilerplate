@@ -2,15 +2,29 @@ name: PR Changelog Addition
 on:
   pull_request:
     types:
+<<<<<<< HEAD
     - opened
     - edited
     - synchronized
     - labeled
     - unlabeled
+=======
+      - opened
+      - edited
+      - synchronized
+      - labeled
+      - unlabeled
+>>>>>>> bfffaef570885b39d6a7314eccb14f8e6c18ce71
 jobs:
   add_to_changelog:
     runs-on: ubuntu-latest
     steps:
+<<<<<<< HEAD
     - uses: guzzler/file-changelog-issue-action@master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+=======
+      - uses: guzzler/file-changelog-issue-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+>>>>>>> bfffaef570885b39d6a7314eccb14f8e6c18ce71

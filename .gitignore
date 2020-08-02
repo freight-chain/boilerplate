@@ -1,8 +1,9 @@
 # MUST KEEP
-Chart.yaml
-Chart.yml
-values.yaml
-values.yml
+.env
+.env.production
+.production.env
+.staging.env
+.env.staging
 
 ## edit
 build
