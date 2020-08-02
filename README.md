@@ -10,12 +10,14 @@
 <!-- END BANNER IMAGE -->
 <!-- BADGES START -->
 
-<p align="center>
+
 ![GitHub issue/pull request detail](https://img.shields.io/github/issues/detail/title/freight-trust/protocol/1?label=protocol)
 ![GitHub issue/pull request detail](https://img.shields.io/github/issues/detail/label/freight-chain/network/2?color=success&label=%40freight-trust)
 ![GitHub issue/pull request detail](https://img.shields.io/github/issues/detail/title/freight-trust/spec/4?color=0F6DFF&label=%40freight-trust)
 ![GitHub issue/pull request detail](https://img.shields.io/github/issues/detail/title/freight-trust/libedi/1?color=007D79&label=libedi)
- </p>
+ 
+
+
 <br> 
 <!-- BADGES END -->
 <!-- FREIGHT TRUST HEADER AREA DEFAULTS END -->
@@ -25,7 +27,8 @@
 
 Pristine is an open source repository in its original condition.
 
-There are a lack of repositories to start from to build community driven open source projects. Pristine is a starting point, it follows a Documentation Driven Development approach, and can be used as a resource to augment existing documentation.
+There are a lack of repositories to start from to build community driven open source projects.
+Pristine is a starting point, it follows a Documentation Driven Development approach, and can be used as a resource to augment existing documentation.
 
 ## How to use Pristine in your project
 
