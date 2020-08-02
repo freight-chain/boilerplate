@@ -1,0 +1,10 @@
+[huskyCI-Ignore]
+
+# Bandit ignore:
+tests/
+
+# Safety igonre:
+vendor/
+
+# Gosec ignore:
+api/server.go
