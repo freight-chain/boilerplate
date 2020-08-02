@@ -14,7 +14,11 @@
 ![GitHub issue/pull request detail](https://img.shields.io/github/issues/detail/title/freight-trust/spec/4?color=0F6DFF&label=%40freight-trust)
 ![GitHub issue/pull request detail](https://img.shields.io/github/issues/detail/title/freight-trust/libedi/1?color=007D79&label=libedi)
 
+<<<<<<< HEAD
+<br> 
+=======
 <br>
+>>>>>>> 2.0.0
 <!-- BADGES END -->
 <!-- FREIGHT TRUST HEADER AREA DEFAULTS END -->
 

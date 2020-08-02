@@ -1,7 +1,22 @@
 ---
 name: ISSUE_TRACKER
 about: Tracking issues
+<<<<<<< HEAD
+<<<<<<< HEAD
+title: "[DATE]: [FEATURE NAME]"
+labels: tracking issue, needs triage, automated task
+assignees: freightcorpbot
+---
+=======
 title: '[DATE]: [FEATURE NAME]'
 labels: tracking issue, needs triage, automated task
 assignees: freightcorpbot
 ---
+
+>>>>>>> bfffaef570885b39d6a7314eccb14f8e6c18ce71
+=======
+title: '[DATE]: [FEATURE NAME]'
+labels: tracking issue, needs triage, automated task
+assignees: freightcorpbot
+---
+>>>>>>> 2.0.0
