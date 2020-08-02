@@ -28,11 +28,10 @@ staleLabel: stale
 markComment: >
   Hi all!
 
-  This Pull Request has not had any recent activity, is it still relevant? If so, what is blocking it?
-  Is there anything we can do to help move it forward?
+  This Pull Request has not had any recent activity, is it still relevant? If
+  so, what is blocking it? Is there anything we can do to help move it forward?
 
   Thanks!
-
 
 # Comment to post when removing the stale label.
 # unmarkComment: >
@@ -42,18 +41,17 @@ markComment: >
 closeComment: >
   Hi folks!
 
-  This Pull Request is being closed as there was no response to the previous prompt.
-  However, please leave a comment whenever you're ready to resume, so it can be reopened.
+  This Pull Request is being closed as there was no response to the previous
+  prompt. However, please leave a comment whenever you're ready to resume, so it
+  can be reopened.
 
   Thanks again!
-
 
 # Limit the number of actions per hour, from 1-30. Default is 30
 limitPerRun: 45
 
 # Limit to only `issues` or `pulls`
 only: pulls
-
 # Optionally, specify configuration settings that are specific to just 'issues' or 'pulls':
 # pulls:
 #   daysUntilStale: 45
