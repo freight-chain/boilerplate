@@ -1,6 +1,7 @@
 #!/bin/bash -e
 
 # sanity check
+# adding this is to make sure we have a frame of reference for changing directories , this should be done in a clean folder
 touch .gitattributes
 
 
@@ -10,16 +11,26 @@ echo "Setting up .github repo health files...."
 mkdir -p -v .github/ISSUE_TEMPLATE
 cd .github
 curl https://raw.githubusercontent.com/freight-chain/boilerplate/github-health-files/.github/COMMUNITY_GUIDELINES.md --output COMMUNITY_GUIDELINES.md
+curl https://raw.githubusercontent.com/freight-chain/boilerplate/github-health-files/.github/CLA.md --output CLA.md
+curl https://raw.githubusercontent.com/freight-chain/boilerplate/github-health-files/.github/SECURITY.md --output SECURITY.md
+curl https://raw.githubusercontent.com/freight-chain/boilerplate/github-health-files/.github/SUPPORT.md --output SUPPORT.md
+curl https://raw.githubusercontent.com/freight-chain/boilerplate/github-health-files/.github/CONTRIBUTING.md --output CONTRIBUTING.md
+curl https://raw.githubusercontent.com/freight-chain/boilerplate/github-health-files/.github/PULL_REQUEST_TEMPLATE.md --output PULL_REQUEST_TEMPLATE.md
+
 cd ISSUE_TEMPLATE
 curl https://raw.githubusercontent.com/freight-chain/boilerplate/github-health-files/.github/ISSUE_TEMPLATE/feature_request.md --output feature_request.md
 curl https://raw.githubusercontent.com/freight-chain/boilerplate/github-health-files/.github/ISSUE_TEMPLATE/bug_report.md --output bug_report.md 
 touch action.yaml
 cd .. 
-cd ..
+
+# <-- STILL in .github/ dir -->
 mkdir -p -v .github/workflows
+cd workflows/
 touch  .github/workflows/.gitkeep
 https://raw.githubusercontent.com/freight-chain/boilerplate/github-health-files/.github/workflows/files-changed.yaml
 # we can also download this https://raw.githubusercontent.com/freight-chain/boilerplate/master/.github/workflows/files-changed.yaml
+ cd ..
+ cd ..
  
 # <-- ROOT OF REPOSITORY DIRECTORY -->
 echo "Setting up Repository Boilerplate Files"
