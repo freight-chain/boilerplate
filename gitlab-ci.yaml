@@ -1,0 +1,24 @@
+stages:
+  - huskyCI
+  - sonar-stage
+
+huskyCI: 
+  stage: huskyCI
+  image: "golang:1.13-alpine"
+  before_script:
+    - ""
+  variables: # use your org configuration
+    HUSKYCI_CLIENT_URL: https://huskyci-client.YOURORG.com 
+    HUSKYCI_CLIENT_API_ADDR: https://huskyci.YOURORG.com
+    HUSKYCI_CLIENT_REPO_URL: gitlab@gitlab.YOURORG.com:$CI_PROJECT_PATH.git
+    HUSKYCI_CLIENT_REPO_BRANCH: $CI_COMMIT_REF_NAME
+    HUSKYCI_CLIENT_API_USE_HTTPS: "true"
+  script:
+    - wget $HUSKYCI_CLIENT_URL/huskyci-client
+    - chmod +x huskyci-client
+    - ./huskyci-client
+  allow_failure: true
+  artifacts:
+    when: always
+    paths:
+      - huskyCI
