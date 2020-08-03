@@ -10,12 +10,13 @@
 
 > Is this a feature request
 
-> What did you expect to happen? What happened instead? What would you like to see changed?
+> What did you expect to happen? What happened instead? What would you like to
+> see changed?
 
 ## Steps to reproduce the issue
 
 <!--
-	
+
 	{{GITHUB_REPO}}
 
 -->
