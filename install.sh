@@ -18,23 +18,23 @@ if [ "$VERSION" == "" ]; then
 fi
 
 if [ "$OS" == "Darwin" ]; then
-    exec_curl $URL/$VERSION/mac_amd64 $TARGET
+    exec_curl "$URL/$VERSION"/mac_amd64 "$TARGET"
     echo "$MESSAGE_START"
-    chmod +x $TARGET
+    chmod +x "$TARGET"
     echo "$MESSAGE_END"
     docgen
 elif [ "$OS" == "Linux" ]; then
   if [ "$ARCH" == "x86_64" ]; then
-    exec_curl $URL/$VERSION/linux_amd64 $TARGET
+    exec_curl "$URL/$VERSION"/linux_amd64 "$TARGET"
     echo "$MESSAGE_START"
-    chmod +x $TARGET
+    chmod +x "$TARGET"
     echo "$MESSAGE_END"
     docgen
   fi
 
   if [ "$ARCH" == "i368" ]; then
-    exec_curl $URL/$VERSION/linux_386 $TARGET
-    chmod +x $TARGET
+    exec_curl "$URL/$VERSION"/linux_386 "$TARGET"
+    chmod +x "$TARGET"
     docgen
   fi
 fi
